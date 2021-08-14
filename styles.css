@@ -4,6 +4,10 @@ body {
 	animation: gradient 15s ease infinite;
 }
 
+.container {
+    padding: 0 30px;
+}
+
 .insta {
     display: flex;
     justify-content: center;
@@ -11,6 +15,7 @@ body {
     width: 100%;
     min-height: 100vh;
     font-size: 4em;
+    text-align: center;
 }
 
 a {
@@ -34,3 +39,15 @@ a:hover {
             background-position: 0% 50%;
         }
     }
+
+@media (max-width: 768px) {
+    .insta {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 320px) {
+    .insta {
+        font-size: 2em;
+    }
+}
